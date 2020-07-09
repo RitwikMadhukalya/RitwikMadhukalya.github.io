@@ -48,6 +48,7 @@
 
 @media (max-width: 767px){
     body{
+        overflow: hidden;
         margin-top: 0px;
         background: url("../img/bg (3).jpg");
         height: 100vh;
