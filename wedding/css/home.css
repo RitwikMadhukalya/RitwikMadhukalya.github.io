@@ -5,7 +5,7 @@ html {
         background:  rgba(36, 36, 36, 0.3);
     }
     .img1 {
-        background: url('img\img (10).jpg');
+        background-image: url('img/img (10).jpg');
         height: 100vh;
         width: auto;
         /* padding-top: 10px; */
