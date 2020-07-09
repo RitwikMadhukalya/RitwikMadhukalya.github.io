@@ -1,0 +1,8 @@
+font-family: 'Cedarville Cursive', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fondamento', cursive;
+font-family: 'Galada', cursive;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Petit Formal Script', cursive;
