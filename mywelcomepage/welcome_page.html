@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/time.js"></script>
+    <script src="js/calandarModal.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--googleapis-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--font-awesome-->
+</head>
+
+<body onload="startTime()">
+    <div class="row">
+        <div class="col m6" style="height: 100vh;">
+            <!-- <div style="background: chartreuse; height: 50vh; margin-left: -10px; padding: 0; width: 52vw;">
+                <img src="img/1.jpg" style="width: 50%;"></div>
+            <div style="background: rgb(83, 68, 224); height: 50vh; margin-left: -10px; padding: 0; width: 52vw;"></div> -->
+            <div class="row" style="margin-left: -11px; margin-bottom: 1px ; padding: 0; width: 52vw;">
+                <div class="col m12" style="height: 45vh;">
+                    <img src="img/1.jpg" class="responsive" style="width: 30%; height: 220px; border-radius: 50%; margin-top: 10%; margin-left: 35%;">
+                </div>
+            </div>
+            <div class="row" style="margin-left: -11px; padding: 0; width: 52vw; margin-top: -15px;">
+                <div class="col m12" style="height: 50vh;">
+                    <!-- <h3>Welcome</h3> -->
+                    <h2>Ritwik Madhukalya</h2>
+                    
+
+                    <div class="nostyle" style="width: 50%; margin-left: 25%;">
+                        <table class="centered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <a href="https://www.facebook.com/ritwik.madhukalya11" class="btn" style="background: #4267B2 ;"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                    </th>
+                                    <th>
+                                        <a href="https://www.instagram.com/ritwik_madhukalya/" class="btn" style="background-image: linear-gradient(to right top, #d15b00, #d35201, #d44804, #d63d08, #d72f0d, #e22325, #eb1439, #f3004c, #fe0076, #ff13a2, #f43dcf, #d95ffb);"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    </th>
+                                    <th>
+                                        <a href="https://www.linkedin.com/in/ritwikmadhukalya/" class="btn" style="background: #0077B5;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                    </th>
+                                    <th>
+                                        <a href="https://www.gmail.com" class="btn" style="background: #C03B2B;"><i class="fa fa-envelope-open" aria-hidden="true"></i></a>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="margin-left: -10px;">Facebook</td>
+                                    <td>Instagram</td>
+                                    <td>Linkedin</td>
+                                    <td><pre>  Gmail  </pre>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br>
+                    <div style="text-align: center;">
+                        <a href="https://www.youtube.com/channel/UCLlfupMbHZHzExFZVsmO5bg" class="btn red"><i class="fa fa-youtube-play" aria-hidden="true"> Youtube</i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col m6">
+            <h3 id="txt1"></h3>
+            <h3 id="txt2"></h3>
+            <a class="btn modal-trigger" style="height: 100px; background: transparent; width: 50%; margin-left: 25%;" href="#modal1">
+                <h3 id="txt3"></h3>
+            </a>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal" style="overflow: hidden;">
+                <div class="modal-content">
+                    <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
+                        <iframe src="https://calendar.google.com/calendar/embed?height=700&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=cml0d2lrbWFkczIzQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%2322AA99&amp;color=%23329262&amp;color=%23227F63&amp;color=%23336699&amp;showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;showDate=1&amp;title"
+                            style="border-width:0; position: absolute; top:0; left: 0;" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+
+                    </div>
+
+                </div>
+                <!-- <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    /* background-image: linear-gradient(to right top, #004e44, #00584d, #006256, #006c5f, #007768, #008473, #00917f, #009f8a, #00b39b, #00c7ad, #00dbbf, #00f0d1); */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/8.jpg);
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    /* animation: animate 25s ease-in-out infinite; */
+}
+
+
+/* @keyframes animate {
+    0%,
+    100% {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/5.jpg);
+    }
+    25% {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/6.jpg);
+    }
+    50% {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/8.jpg);
+    }
+    75% {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/9.jpg);
+    }
+} */
+
+.m6 h3 {
+    text-align: center;
+}
+
+#txt1 {
+    margin-top: 30%;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 100px;
+}
+
+#txt3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.m12 h3,
+h2 {
+    text-align: center;
+}
+
+.social-buttons {
+    margin-left: 34%;
+}
+
+.nostyle table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.fa-youtube-play {
+    font-style: normal;
+    color: #000;
+    text-transform: none;
+}
