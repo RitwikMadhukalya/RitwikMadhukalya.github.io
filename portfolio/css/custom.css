@@ -57,7 +57,7 @@
         text-decoration-color: coral;
         text-decoration-style: solid;
     }
-    .small_screen{
+    .content-mobile{
         display: none;
     }
 }
@@ -116,7 +116,7 @@
         color: white;
     }
 
-    .large_screen{
+    .content-desktop{
         display: none;
     }
 }
