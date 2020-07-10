@@ -1,6 +1,9 @@
 @media (min-width: 768px){
-    body{
-        overflow: hidden;
+    html{
+        scroll-behavior: smooth;
+    }
+    .bdy{
+        /* overflow: hidden; */
         margin-top: 0;
         padding-top: 0;
         background: url("../img/bg (3).jpg");
@@ -33,7 +36,11 @@
         text-align:center;
         padding-top: 20%;
         color: white;
-        text-shadow: 2px 2px black;
+        text-shadow: 2px 2px coral;
+    }
+    .title:hover
+    {
+        text-shadow: 2px 2px rgb(0, 204, 255);
     }
 
     .description{
@@ -44,11 +51,16 @@
     .title-btn{
         display: none;
     }
+
+    .col-md-3 strong {
+        text-decoration: underline;
+        text-decoration-color: coral;
+        text-decoration-style: solid;
+    }
 }
 
 @media (max-width: 767px){
     body{
-        overflow: hidden;
         margin-top: 0px;
         background: url("../img/bg (3).jpg");
         height: 100vh;
@@ -82,16 +94,26 @@
         color: white;
         text-shadow: 2px 2px black;
     }
+    .title:hover
+    {
+        color: coral;
+    }
     .description{
         text-align: center;
         color: white;
     }
     .title-btn{
         margin-top: 10%;
-        width: 50%;
-        margin-left: 25%;
-        border-radius: 20px;
+        width: 40%;
+        margin-left: 30%;
+        /* border-radius: 20px; */
         box-shadow: 2px 2px 5px black;
         font-weight: bold;
+        background-color: coral;
+        color: white;
+    }
+
+    .large_screen{
+        display: none;
     }
 }
