@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.js"></script>
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        /* font-family: "Lato", sans-serif; */
+        font-family: 'Quicksand', sans-serif;
+        overflow: hidden;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 20%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20%;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+
+    }
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .main {
+        margin-left: 20%;
+        /* Same as the width of the sidenav */
+        padding: 50px;
+        font-size: 28px;
+        /* Increased text to enable scrolling */
+    }
+
+    .main h3 {
+        margin-top: 30px;
+    }
+
+    .main h3 span {
+        color: red;
+    }
+
+    .links a img {
+        padding: 4px;
+    }
+
+    .links a img:hover {
+        box-shadow: 3px 3px 10px black;
+        border-radius: 20px;
+    }
+
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+    }
+
+    .my-float {
+        margin-top: 20px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="sidenav">
+        <!-- <a href="#home">Home</a> -->
+        <a href="#aboutme">About Me</a>
+        <a href="#contacts">Contacts</a>
+    </div>
+
+    <div class="main" id="home">
+        <div class="img1" style="height: 100vh; text-align: center;">
+            <img src="img/man-in-gray-suit-3526923.jpg"
+                style="width: 500px; height: 500px; object-fit: cover; object-position: 20% 10px;  " alt="">
+            <h3><span>Hello!</span> I am Daniel Brown</h3>
+        </div>
+
+        <div class="aboutme" id="aboutme" style="height: 100vh; padding: 10%;">
+            <h3 style="letter-spacing: .15em;">I am a Web Developer</h3>
+            <p style="text-align: justify; font-size: 20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Fuga quae vero dolorem, cupiditate libero neque reiciendis excepturi nihil provident ipsam beatae
+                ratione minima facere, amet deserunt itaque error. Molestias, quia, quas eum sint corrupti magni fugiat
+                obcaecati id nemo delectus necessitatibus maiores tenetur doloremque asperiores quasi enim commodi
+                voluptate ipsum reprehenderit nesciunt quidem ratione? Nostrum nemo facilis cupiditate nisi ipsam cum,
+                quia aliquid harum, dolorem dolor eveniet asperiores assumenda quae quidem itaque minima veniam in
+                temporibus sed ad rerum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ab eaque quo
+                quos hic nesciunt, laborum culpa saepe officia consectetur provident repudiandae excepturi laudantium
+                ipsam magni atque enim rerum laboriosam sequi, eligendi perferendis sapiente asperiores illum alias?
+                Deserunt, mollitia error! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus amet, nemo
+                ad est alias facilis sunt earum impedit omnis repudiandae!</p>
+        </div>
+
+        <div class="contacts" id="contacts" style="height: 100vh; padding: 10%;">
+            <div style="text-align: center; margin-top: 20%;">
+                <p>Bhetapara, Guwahati, Assam, 781028</p>
+                <p>+91 76379-18619 / ritwikmads@gmail.com</p>
+                <p style="font-weight: bold;">Social Media</p>
+                <div class="links">
+                    <a class="pr-4" title="facebook" href="https://www.facebook.com/ritwik.madhukalya11"><img
+                            src="https://img.icons8.com/ios/48/000000/facebook-new.png" /></a>
+                    <a class="pr-4" title="instagram" href="https://www.instagram.com/ritwik_madhukalya/"><img
+                            src="https://img.icons8.com/ios/50/000000/instagram-new.png" /></a>
+                    <a title="gmail" href="https://www.linkedin.com/in/ritwikmadhukalya/"><img src="https://img.icons8.com/ios/50/000000/linkedin-circled.png"/></a>
+                </div>
+            </div>
+        </div>
+        <a href="#home" class="float">
+            <img src="https://img.icons8.com/ios/50/000000/home-button.png"/>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>
