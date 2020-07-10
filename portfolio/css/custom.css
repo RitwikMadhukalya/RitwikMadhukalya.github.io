@@ -57,6 +57,9 @@
         text-decoration-color: coral;
         text-decoration-style: solid;
     }
+    .small_screen{
+        display: none;
+    }
 }
 
 @media (max-width: 767px){
