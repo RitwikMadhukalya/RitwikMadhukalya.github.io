@@ -1,0 +1,136 @@
+/* html {
+  scroll-behavior: smooth;
+} */
+
+body {
+  /* font-family: "Lato", sans-serif; */
+  /* font-family: "Quicksand", sans-serif; */
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  overflow: hidden;
+}
+
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* background-color: #111; */
+  color: white;
+  overflow-x: hidden;
+  /* padding-top: 20%; */
+  display:flex; 
+  flex-direction:row;
+  /* text-align: center; */
+  padding-left: 30px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size:1.5vw;
+  /* color: #818181; */
+  color: black;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #4b4b4b;
+}
+
+.main {
+  margin-left: 20%;
+  /* Same as the width of the sidenav */
+  /* padding: 50px; */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+}
+
+.main h3 {
+  margin-top: 30px;
+}
+
+.main h3 span {
+  color: red;
+}
+
+.links a img {
+  padding: 4px;
+}
+
+.links a img:hover {
+  box-shadow: 3px 3px 10px black;
+  border-radius: 20px;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+}
+
+.my-float {
+  margin-top: 20px;
+}
+
+.mobile-content {
+  display: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+   }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+
+/* *************************************************************************************** */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+ }
+
+@media (max-width: 991.98px) {  
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  
+  
+}
