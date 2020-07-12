@@ -54,3 +54,42 @@
   box-shadow: 3px 3px 10px rgb(179, 179, 179);
   border-radius: 20px;
 }
+
+
+/* Responsive Design */
+
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .navigation{
+    display: block;
+  }
+ }
+
+/*  Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+  .navigation{
+    display: block;
+  }
+ }
+
+ @media (max-width: 991.97px){
+  .navigation{
+    display: none;
+  }
+ }
+/*  Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) { 
+  .navigation{
+    display: none;
+  }
+ }
+
+/*  Large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) { 
+  .navigation{
+    display: none;
+  }
+  .headerimage{
+    display: none;
+  }
+ }
