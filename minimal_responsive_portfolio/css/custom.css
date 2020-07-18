@@ -1,14 +1,13 @@
-.html{
+.html {
   scroll-behavior: smooth;
 }
-.body{
+.body {
   overflow: hidden;
   font-family: "Quicksand", sans-serif;
 }
 
- .headerimage
-{
- /* background-image: url("../img/man-in-gray-suit-3526923.jpg");
+.headerimage {
+  /* background-image: url("../img/man-in-gray-suit-3526923.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;*/
@@ -16,7 +15,7 @@
   padding-left: 0px;
   margin-right: 0;
   margin-left: 0;
-} 
+}
 
 .list-group-item:first-child {
   border-top-left-radius: 0 !important;
@@ -26,7 +25,7 @@
 .list-group-item {
   position: relative;
   display: block;
-  padding: .75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
   background-color: #fff;
   border: none !important;
@@ -55,41 +54,44 @@
   border-radius: 20px;
 }
 
-
 /* Responsive Design */
 
 /*  Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
-  .navigation{
+@media (min-width: 575.98px) {
+  .navigation {
     display: block;
   }
- }
+}
 
 /*  Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
-  .navigation{
+@media (min-width: 767.98px) {
+  .navigation {
     display: block;
   }
- }
+}
 
- @media (max-width: 991.97px){
-  .navigation{
+@media (min-width: 991.97px) {
+  .navigation {
     display: none;
   }
- }
+}
 /*  Medium devices (tablets, less than 992px) */
-@media (min-width: 991.98px) { 
-  .navigation{
-    display: none;
+@media (min-width: 991.98px) {
+  .navigation {
+    display: block;
   }
- }
+  .headerimage {
+    display: block;
+    width: 100vw;
+  }
+}
 
 /*  Large devices (desktops, less than 1200px) */
-@media (min-width: 1199.98px) { 
-  .navigation{
-    display: none;
+@media (min-width: 1199.98px) {
+  .navigation {
+    display: block;
   }
-  .headerimage{
-    display: none;
+  .headerimage {
+    display: block;
   }
- }
+}

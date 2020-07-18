@@ -1,0 +1,174 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Quicksand", sans-serif;
+  overflow: hidden;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  padding-top: 40vh;
+  width: 200px;
+  background-color: #ffffff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: whitesmoke;
+  color: red;
+  /* font-size: 18px; */
+}
+
+.sidebar .home:hover {
+  background-color: white !important;
+}
+
+.list-group {
+  flex-direction: column !important;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: none !important;
+}
+
+div.content {
+  margin-left: 200px;
+  /* padding: 1px 16px; */
+  height: 100vh;
+}
+
+.headerimage {
+  /* background-image: url("../img/man-in-gray-suit-3526923.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;*/
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.load_image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 0px 0px;
+}
+
+.flex-container1 {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.links a img {
+  padding: 4px;
+}
+
+.links a img:hover {
+  box-shadow: 3px 3px 10px rgb(179, 179, 179);
+  border-radius: 20px;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
+  right: 40px;
+}
+
+.mobile_aboutus {
+  display: none;
+}
+.desktop_aboutus {
+  display: block;
+  text-align: justify;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 0vh !important;
+  }
+  .sidebar a {
+    float: left;
+  }
+  .list-group {
+    flex-direction: row !important;
+  }
+  div.content {
+    margin-left: 0;
+  }
+  .load_image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 0px 0px !important;
+  }
+  .mobile_aboutus {
+    display: block;
+    text-align: justify;
+    font-size: 16px;
+  }
+  .desktop_aboutus {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  .mobile_aboutus {
+    display: block;
+    text-align: justify;
+    font-size: 14px;
+  }
+  .desktop_aboutus {
+    display: none;
+  }
+}
