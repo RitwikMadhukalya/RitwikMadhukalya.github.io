@@ -5,7 +5,7 @@ body {
   margin: 0;
   /* font-family: "Lato", sans-serif; */
   font-family: "Quicksand", sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .sidebar {
@@ -20,6 +20,7 @@ body {
   overflow: auto;
   text-align: center;
   overflow: hidden;
+  border-right: 1px solid rgba(158, 158, 158, 0.102);
 }
 
 .sidebar a {
@@ -72,17 +73,19 @@ div.content {
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;*/
-  padding-right: 0px;
-  padding-left: 0px;
-  margin-right: 0;
-  margin-left: 0;
+  padding-top: 60px;
+  padding-bottom: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .load_image {
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   object-fit: cover;
-  object-position: 0px 0px;
+  object-position: 0px -25px;
 }
 
 .flex-container1 {
@@ -125,6 +128,9 @@ div.content {
   text-align: justify;
   font-size: 16px;
 }
+.about_container {
+  padding: 12%;
+}
 
 @media screen and (max-width: 700px) {
   .sidebar {
@@ -148,14 +154,27 @@ div.content {
     object-fit: cover;
     object-position: 0px 0px !important;
   }
+  .headerimage {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
   .mobile_aboutus {
     display: block;
     text-align: justify;
-    font-size: 16px;
+    font-size: 24px;
   }
   .desktop_aboutus {
     display: none;
   }
+}
+
+.contact {
+  margin-top: 70px;
 }
 
 @media screen and (max-width: 400px) {
