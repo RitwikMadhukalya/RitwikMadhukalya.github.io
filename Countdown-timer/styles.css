@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    background: linear-gradient(45deg, rgba(54, 54, 54, 0.555), rgba(158, 158, 158, 0.555)), url("newyear (3).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.event_name {
+    margin-bottom: 15rem;
+}
+
+.celebration {
+    font-size: 4rem;
+}
+
+.countdown-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.countdown-timer {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.countdown {
+    text-align: center;
+}
+
+.countdown h1 {
+    font-size: 6rem;
+}
+
+.countdown span {
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 375px) {
+    .event_name {
+        margin-bottom: 10rem;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .event_name {
+        margin-bottom: 10rem;
+    }
+
+    .celebration {
+        font-size: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .countdown-div {
+        margin-top: -15rem;
+    }
+
+    .countdown-timer {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .countdown {
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .countdown {
+        padding: 0 2rem;
+    }
+
+    .countdown-div {
+        margin-top: -10rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .countdown {
+        padding: 0 2rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .countdown-div {
+        margin-top: -10rem;
+    }
+}
