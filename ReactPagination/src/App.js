@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Posts from './components/Posts';
 // import Pagination from './components/Pagination';
 import ReactPaginate from "react-paginate"
-import axios from 'axios';
+// import axios from 'axios';
 import './App.css';
 
 const App = () => {
@@ -14,9 +14,18 @@ const App = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
-      const res = await axios.get('https://jsonplaceholder.typicode.com/comments');
-      setPosts(res.data);
+      // const res = await axios.get('https://jsonplaceholder.typicode.com/comments');
+      // setPosts(res.data);
+
+      // const posts_data = require('./posts.json');
+      // setPosts(posts_data);
+
+      const comments_data = require('./comments.json');
+      setPosts(comments_data);
+
       setLoading(false);
+
+
     };
 
     fetchPosts();
@@ -34,8 +43,8 @@ const App = () => {
   const pageCount = Math.ceil(posts.length / postsPerPage);
 
   return (
-    <div className='container mt-5'>
-      <h1 className='text-primary mb-3'>My Blog</h1>
+    <div className='m-5'>
+      <h1 className='text-primary '>React Pagination</h1>
       <Posts posts={currentPosts} loading={loading} />
       <ReactPaginate
         previousLabel={"← Previous"}

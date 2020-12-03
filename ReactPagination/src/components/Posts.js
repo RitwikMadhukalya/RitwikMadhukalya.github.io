@@ -7,7 +7,7 @@ const Posts = ({ posts, loading }) => {
   }
 
   return (
-    <div>
+    <div style={{ height: "80vh" }}>
       <Table>
         <thead>
           <tr>
@@ -29,7 +29,6 @@ const Posts = ({ posts, loading }) => {
 
         </tbody>
       </Table>
-
     </div>
 
 
