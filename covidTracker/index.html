@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="fetch()" style="text-align: center;">
+    <h1 style="margin-top: 15px;">Covid-19 Tracker 2020</h1><br>
+    <div style="margin-left: 95%; z-index: 1; position: absolute; top: 14px;">
+        <h2>Live</h2>
+        <button class="pulse-button"></button>
+    </div>
+
+
+    <div class="container">
+        <h2>GLOBAL</h2><br>
+        <table class="table table-bordered text-center" id="globalTable">
+            <tr>
+                <th>Total Confirmed</th>
+                <th>Total Recovered</th>
+                <th>Total Deaths</th>
+            </tr>
+        </table>
+    </div>
+    <hr style="margin: 50px 0; font-weight: bold;">
+
+    <div class="table table-responsive container">
+        <table class="table table-bordered table-striped text-center" id="tbval">
+            <tr>
+                <th>Country</th>
+                <th>Total Confirmed</th>
+                <th>Total Recovered</th>
+                <th>Total Deaths</th>
+                <th>New Recovered</th>
+                <th>New Deaths</th>
+            </tr>
+        </table>
+    </div>
+
+    <footer>Made with &hearts; by Ritwik Madhukalya :D </footer>
+
+    <script>
+        function fetch() {
+            $.get("https://api.covid19api.com/summary",
+
+                function (data) {
+                    // console.log(data['Countries'].length);
+                    var tbval = document.getElementById("tbval");
+
+
+                    for (var i = 1; i < (data['Countries'].length); i++) {
+                        var x = tbval.insertRow();
+                        x.insertCell(0);
+                        tbval.rows[i].cells[0].innerHTML = data['Countries'][i - 1]['Country'];
+
+                        x.insertCell(1);
+                        tbval.rows[i].cells[1].innerHTML = data['Countries'][i - 1]['TotalConfirmed'];
+                        tbval.rows[i].cells[1].style.background = "MediumSeaGreen";
+
+
+                        x.insertCell(2);
+                        tbval.rows[i].cells[2].innerHTML = data['Countries'][i - 1]['TotalRecovered'];
+                        tbval.rows[i].cells[2].style.background = "MediumSeaGreen";
+
+                        x.insertCell(3);
+                        tbval.rows[i].cells[3].innerHTML = data['Countries'][i - 1]['TotalDeaths'];
+                        tbval.rows[i].cells[3].style.background = "Tomato";
+
+                        x.insertCell(4);
+                        tbval.rows[i].cells[4].innerHTML = data['Countries'][i - 1]['NewRecovered'];
+                        tbval.rows[i].cells[4].style.background = "DodgerBlue";
+
+                        x.insertCell(5);
+                        tbval.rows[i].cells[5].innerHTML = data['Countries'][i - 1]['NewDeaths'];
+                        tbval.rows[i].cells[5].style.background = "Tomato";
+                    }
+
+                    var globalTable = document.getElementById('globalTable');
+                    var y = globalTable.insertRow();
+                    y.insertCell(0);
+                    globalTable.rows[1].cells[0].innerHTML = data['Global']['TotalConfirmed'];
+
+                    y.insertCell(1);
+                    globalTable.rows[1].cells[1].innerHTML = data['Global']['TotalRecovered'];
+
+                    y.insertCell(2);
+                    globalTable.rows[1].cells[2].innerHTML = data['Global']['TotalDeaths'];
+                }
+            );
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
