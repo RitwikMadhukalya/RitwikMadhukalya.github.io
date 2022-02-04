@@ -1,4 +1,4 @@
-👋 Hi, I’m @RitwikMadhukalya
-👀 I’m interested in web development
-🌱 I’m currently learning react js and node js
-📫 How to reach me : ritwikmads@gmail.com
+- 👋 Hi, I’m @RitwikMadhukalya
+- 👀 I’m interested in creating websites and web applications
+- 🌱 I’m currently learning React js and Node js
+- 📫 How to reach me : ritwikmads@gmail.com
